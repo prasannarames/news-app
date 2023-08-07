@@ -12,10 +12,10 @@ const Navbar = () => {
       <div>
         <ul className="flex gap-3 cursor-pointer">
           <Link href="/login">
-            <li>login</li>
+            <li className="border-2 px-2 py-1 rounded-r-sm">login</li>
           </Link>
           <Link href="/register">
-            <li>register</li>
+            <li className="border-2 px-2 py-1 rounded-r-sm">register</li>
           </Link>
         </ul>
       </div>
