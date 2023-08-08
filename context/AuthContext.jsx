@@ -8,6 +8,7 @@ import {
   signOut,
 } from "firebase/auth";
 import { auth } from "../app/lib/firebase";
+import NEWS_API_KEY from "@/newsApiKey";
 const AuthContext = createContext({});
 export const useAuth = () => useContext(AuthContext);
 
@@ -21,7 +22,7 @@ export const AuthContextProvider = ({ children }) => {
     const response = await axios.get(
       "https://newsapi.org/v2/top-headlines?" +
         "country=in&" +
-        "apiKey=c4a39e282eec4d6dabeddcc5c7a6bacf"
+        `${NEWS_API_KEY}`
     );
 
     setNewsData(response.data);

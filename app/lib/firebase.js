@@ -1,9 +1,9 @@
-
+import FIREBASE_API_KEY from "@/apiKey";
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth"
 
 const firebaseConfig = {
-    apiKey: "AIzaSyBXYhsBlopv_RwCIaldVD2pmwALZ6D9ayU",
+    apiKey: `${FIREBASE_API_KEY}`,
     authDomain: "news-app-b1652.firebaseapp.com",
     projectId: "news-app-b1652",
     storageBucket: "news-app-b1652.appspot.com",
